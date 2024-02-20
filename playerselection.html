@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Selection</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Who is playing today?</h1>
+      <br>
+    </header>
+    <div class="player-list">
+
+        <div class="player">
+      
+            <h3>Sushant</h3>
+            <form action="hangman.html">
+                <input type="hidden" name="player" value="Sushant"> 
+                <button class="select-button" type="submit">Select</button>
+            </form>
+           
+          </div>
+      
+          <div class="player">
+      
+          <h3>Bidhan</h3>
+          <form action="hangman.html">
+              <input type="hidden" name="player" value="Bidhan"> 
+              <button class="select-button" type="submit">Select</button>
+          </form>
+         
+        </div>
+    
+      
+    <div class="player">
+      
+        <h3>Sneha</h3>
+        <form action="hangman.html">
+            <input type="hidden" name="player" value="Sneha"> 
+            <button class="select-button" type="submit">Select</button>
+        </form>
+       
+      </div>
+  
+      
+      <div class="player">
+      
+            <h3>Deepak</h3>
+            <form action="hangman.html">
+                <input type="hidden" name="player" value="Deepak"> 
+                <button class="select-button" type="submit">Select</button>
+            </form>
+           
+          </div>
+
+          <div class="player">
+      
+            <h3>Prajwal</h3>
+            <form action="hangman.html">
+                <input type="hidden" name="player" value="Prajwal"> 
+                <button class="select-button" type="submit">Select</button>
+            </form>
+           
+          </div>
+      
+      
+
+     
+      </div>
+      
+    </div>
+  </div>
+  <footer>
+    <p>Developed by Mr. Sushant</p>
+    <a href="Hangman.html">Back to Game</a>
+  </footer>
+  <script>
+    const selectButtons = document.querySelectorAll(".select-button");
+
+    selectButtons.forEach(button => {
+      button.addEventListener("click", function() {
+        const selectedPlayer = this.getAttribute("data-player");
+        
+        window.location.href = `index.html?player=${selectedPlayer}`;
+      });
+    });
+  </script>
+</body>
+</html>

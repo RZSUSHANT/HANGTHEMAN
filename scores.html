@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Scores</title>
+    <style>
+        /* Add some CSS styles to format the table as needed */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        h1 {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Scores</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody id="score-table-body">
+            
+        </tbody>
+    </table>
+    <script>
+        
+        const scores = [
+            { player: "Sushant", score: 5 },
+            { player: "Bidhan", score: 7 },
+            { player: "Sneha", score: 3 },
+            { player: "Prajwal", score: 6 },
+            { player: "Deepak", score: 4 }
+        ];
+
+        const scoreTableBody = document.getElementById("score-table-body");
+        
+        scores.forEach((entry) => {
+            const row = document.createElement("tr");
+            const playerNameCell = document.createElement("td");
+            const playerScoreCell = document.createElement("td");
+            
+            playerNameCell.textContent = entry.player;
+            playerScoreCell.textContent = entry.score;
+            
+            row.appendChild(playerNameCell);
+            row.appendChild(playerScoreCell);
+            
+            scoreTableBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>

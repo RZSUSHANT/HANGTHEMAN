@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to Hangman</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+    }
+    header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 20px 0;
+    }
+    .logo {
+      max-width: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+    h1 {
+      font-size: 36px;
+    }
+    .welcome-page {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      font-size: 18px;
+    }
+    .start-game-button {
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .start-game-button:hover {
+      background-color: #258cd1;
+    }
+    footer {
+      margin-top: 20px;
+      color: #555;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px 0;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    a:hover {
+      color: #258cd1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="Hangman.png" alt="Hangman Logo" class="logo" />
+      <h1>Welcome to Hangman</h1>
+    </header>
+    <div class="welcome-page">
+      <p>Click the button below to start playing.</p> 
+      <button id="start-game-button" class="start-game-button">Start Game</button>
+    </div>
+  </div>
+  <footer>
+    <p>Developed by Mr. Sushant</p>
+    <a href="index.html">Download the Game</a>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const startGameButton = document.getElementById("start-game-button");
+      startGameButton.addEventListener("click", function () {
+        window.location.href = "playerselection.html";
+      });
+    });
+  </script>
+</body>
+</html>

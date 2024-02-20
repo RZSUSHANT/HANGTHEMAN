@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #045048;
+  }
+  
+  .container {
+    font-size: 16px;
+    background-color: #ffffff;
+    width: 90vw;
+    max-width: 34em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+  }
+  
+  .options-container {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+#options-container div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.2em 0 2.4em 0;
+}
+
+#options-container button {
+  padding: 0.6em 1.2em;
+  border: 3px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 0.3em;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#options-container button:disabled {
+  border: 3px solid #808080;
+  color: #808080;
+  background-color: #efefef;
+  cursor: not-allowed;
+}
+
+#options-container button.active {
+  background-color: #8c52ff;
+  border: 3px solid #000000;
+  color: #fff;
+}
+
+.letter-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6em;
+}
+
+#letter-container button {
+  height: 2.4em;
+  width: 2.4em;
+  border-radius: 0.3em;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-game-popup {
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.25);
+}
+
+#user-input-section {
+  display: flex;
+  justify-content: center;
+  font-size: 1.8em;
+  margin: 0.6em 0 1.2em 0;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  border: 10px solid #8c52ff;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+#result-text h2 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#result-text p {
+  font-size: 1.25em;
+  margin: 0.5em 0 1.5em 0;
+}
+
+#result-text span {
+  font-weight: 600;
+}
+
+#new-game-button {
+  font-size: 1.25em;
+  padding: 0.5em 1em;
+  background-color: #8c52ff;
+  border: 3px solid #000000;
+  color: #fff;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.win-msg {
+  color: #39d78d;
+}
+
+.gif-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.gif {
+  width: 100px;
+  height: auto;
+}
+
+
+.lose-msg {
+  color: #fe5152;
+}
+
+footer {
+  text-align: center;
+  background-color: #39d78d;
+  color: #fff;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px;
+}
+
+/* Styles for playerselection.html */
+body {
+  background-color: #045048;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  font-size: 16px;
+  background-color: #ffffff;
+  width: 90vw;
+  max-width: 34em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 3em;
+  border-radius: 0.6em;
+  box-shadow: 0 1.2em 2.4em rgba(111, 85, 0, 0.25);
+}
+
+.header {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+  color: #fff; /* Added text color */
+}
+
+.player-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.player {
+  width: 48%;
+  background-color: #8c52ff; /* Updated background color */
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.4em;
+  box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+}
+
+.player h3 {
+  font-size: 1.8em; /* Updated font size */
+  color: #fff; /* Added text color */
+}
+
+.select-button {
+  display: block;
+  width: 100%;
+  padding: 0.6em 1em;
+  margin-top: 1em;
+  background-color: #39d78d; /* Updated background color */
+  border: none;
+  color: #fff;
+  font-size: 1.4em; /* Updated font size */
+  border-radius: 0.3em;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.select-button:hover {
+  background-color: #28a672; /* Updated hover color */
+}
