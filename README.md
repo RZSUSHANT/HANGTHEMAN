@@ -1,2 +1,2 @@
 # HANGTHEMAN
-Hi, this is a hang the man designed by me. 
+Hi, this is a hang the man  game designed by me. 
